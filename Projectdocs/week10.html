@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 10 — Documentatie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",
+            ink: "#172533",
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: { card: "16px" },
+          maxWidth: { layout: "1100px" },
+          spacing: { base: "16px" },
+          fontFamily: {
+            sans: ["Open Sans", "system-ui", "-apple-system"],
+            display: ["Montserrat", "system-ui", "-apple-system"],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-bg text-ink font-sans antialiased leading-relaxed">
+
+  <!-- HEADER -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-base">
+      <nav class="flex items-center gap-[10px] mb-3">
+        <a class="font-bold text-accent hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent hover:underline" href="week9.html">← Week 9</a>
+        <a class="font-bold text-accent hover:underline" href="index.html">Einde →</a>
+      </nav>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)]">
+        Week 10 — Documentatie
+      </h1>
+      <p class="text-accent font-bold text-[clamp(1.05rem,2.4vw,1.2rem)]">
+        Deze week rond ik mijn project verder af.
+      </p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="max-w-layout mx-auto px-base mt-6 mb-12">
+
+    <!-- Card 1 -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-6 shadow">
+      <p>Content voor week 10 komt hier.</p>
+    </section>
+
+    <!-- Card 2 — jouw afbeeldingen -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-6 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-3">Final UI Screens</h2>
+
+      <!-- Image 1 -->
+      <figure class="mb-6">
+        <img src="app home.png"
+             alt="Mobiele UI ontwerp — ticket scherm"
+             class="w-full max-w-md mx-auto rounded-card border border-stroke shadow">
+        <figcaption class="text-center text-muted text-sm mt-2">
+        Home & routezoeker — verbeterde navigatie en hiërarchie. 
+        </figcaption>
+      </figure>
+
+      <!-- Image 2 -->
+      <figure class="mb-6">
+        <img src="app treinrit.png"
+             alt="Mobiele UI ontwerp — homepagina / routezoeker"
+             class="w-full max-w-md mx-auto rounded-card border border-stroke shadow">
+        <figcaption class="text-center text-muted text-sm mt-2">
+         Route-informatie met overstappen, realtime status & toegankelijkheidsicons.
+        </figcaption>
+      </figure>
+
+      <!-- Image 3 -->
+      <figure>
+        <img src="app ticket.png"
+             alt="Mobiele UI ontwerp — routeoverzicht met overstappen"
+             class="w-full max-w-md mx-auto rounded-card border border-stroke shadow">
+        <figcaption class="text-center text-muted text-sm mt-2">
+            Ticketscherm — finale mobiele UI versie. 
+        </figcaption>
+      </figure>
+
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="flex items-center gap-[10px] mt-4">
+      <a class="font-bold text-accent hover:underline" href="week9.html">← Week 9</a>
+      <a class="font-bold text-accent hover:underline" href="index.html">Einde →</a>
+    </nav>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-stroke py-4 text-muted">
+    <div class="max-w-layout mx-auto px-base">
+      <small>Laatste update: <!-- datum --></small>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -5,39 +5,214 @@
   <title>Lost in Tra(i)nslation — Projectdocumentatie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Google Fonts (jouw keuze) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",      // achtergrond
+            ink: "#172533",     // tekstkleur
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: {
+            card: "16px",
+            tile: "14px",
+          },
+          maxWidth: {
+            layout: "1100px",
+          },
+          spacing: {
+            base: "16px",
+          },
+          fontFamily: {
+            sans: ["Open Sans", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+            display: ["Montserrat", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+          },
+        },
+      },
+    }
+  </script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <p class="eyebrow">Projectdocumentatie</p>
-      <h1>Lost in Tra(i)nslation</h1>
-      <p class="lede">Mijn proces, keuzes en reflecties week per week.</p>
-      <p class="sublede">Klik op een week om mijn voortgang van het proces te bekijken.</p>
+<body class="min-h-screen bg-bg text-ink font-sans leading-relaxed antialiased">
+  <!-- Header -->
+  <header class="pt-7 pb-2">
+    <div class="max-w-layout mx-auto px-base">
+      <p class="uppercase tracking-[0.06em] font-bold text-muted mb-2 text-sm">
+        Projectdocumentatie
+      </p>
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)] mb-2">
+        Lost in Tra(i)nslation
+      </h1>
+      <p class="text-accent font-bold text-[clamp(1.05rem,2.4vw,1.2rem)] mb-1">
+        Mijn proces, keuzes en reflecties week per week.
+      </p>
+      <p class="text-muted max-w-[70ch]">
+        Klik op een week om mijn voortgang van het proces te bekijken.
+      </p>
     </div>
   </header>
 
-  <main class="container">
+  <!-- Main -->
+  <main class="max-w-layout mx-auto px-base mt-4 mb-10">
+    <!-- Week grid -->
     <nav aria-label="Weken">
-      <ul class="week-grid">
-        <li><a class="tile" href="week1.html"><span>Week 1</span><small>Schetsen & brainstorm</small></a></li>
-        <li><a class="tile" href="week2.html"><span>Week 2</span><small>Eerste digitale versie</small></a></li>
-        <li><a class="tile" href="week3.html"><span>Week 3</span><small>Research & herwerking</small></a></li>
-        <li><a class="tile" href="week4.html"><span>Week 4</span><small>Verdere uitwerking</small></a></li>
-        <li><a class="tile" href="week5.html"><span>Week 5</span><small>Iteratie & feedback</small></a></li>
-        <li><a class="tile" href="week6.html"><span>Week 6</span><small>Detailfase</small></a></li>
+      <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mt-[18px] mb-[28px] list-none p-0">
+        <li>
+          <a class="block px-4 py-[18px] rounded-tile no-underline bg-white border border-stroke text-ink 
+                     transition hover:-translate-y-0.5 hover:bg-gradient-to-t hover:from-white hover:to-[#fbfcff] 
+                     hover:shadow-xl focus-visible:outline-none"
+             href="week1.html">
+            <span class="block font-display font-extrabold text-[1.25rem] text-accent">
+              Week 1
+            </span>
+            <small class="block mt-1 text-muted text-sm">
+              Schetsen &amp; brainstorm
+            </small>
+          </a>
+        </li>
 
-        <!-- Voeg later meer weken toe -->
+        <li>
+          <a class="block px-4 py-[18px] rounded-tile no-underline bg-white border border-stroke text-ink 
+                     transition hover:-translate-y-0.5 hover:bg-gradient-to-t hover:from-white hover:to-[#fbfcff] 
+                     hover:shadow-xl focus-visible:outline-none"
+             href="week2.html">
+            <span class="block font-display font-extrabold text-[1.25rem] text-accent">
+              Week 2
+            </span>
+            <small class="block mt-1 text-muted text-sm">
+              Eerste digitale versie
+            </small>
+          </a>
+        </li>
+
+        <li>
+          <a class="block px-4 py-[18px] rounded-tile no-underline bg-white border border-stroke text-ink 
+                     transition hover:-translate-y-0.5 hover:bg-gradient-to-t hover:from-white hover:to-[#fbfcff] 
+                     hover:shadow-xl focus-visible:outline-none"
+             href="week3.html">
+            <span class="block font-display font-extrabold text-[1.25rem] text-accent">
+              Week 3
+            </span>
+            <small class="block mt-1 text-muted text-sm">
+              Research &amp; herwerking
+            </small>
+          </a>
+        </li>
+
+        <li>
+          <a class="block px-4 py-[18px] rounded-tile no-underline bg-white border border-stroke text-ink 
+                     transition hover:-translate-y-0.5 hover:bg-gradient-to-t hover:from-white hover:to-[#fbfcff] 
+                     hover:shadow-xl focus-visible:outline-none"
+             href="week4.html">
+            <span class="block font-display font-extrabold text-[1.25rem] text-accent">
+              Week 4
+            </span>
+            <small class="block mt-1 text-muted text-sm">
+              Verdere uitwerking
+            </small>
+          </a>
+        </li>
+
+        <li>
+          <a class="block px-4 py-[18px] rounded-tile no-underline bg-white border border-stroke text-ink 
+                     transition hover:-translate-y-0.5 hover:bg-gradient-to-t hover:from-white hover:to-[#fbfcff] 
+                     hover:shadow-xl focus-visible:outline-none"
+             href="week5.html">
+            <span class="block font-display font-extrabold text-[1.25rem] text-accent">
+              Week 5
+            </span>
+            <small class="block mt-1 text-muted text-sm">
+              Iteratie &amp; feedback
+            </small>
+          </a>
+        </li>
+
+        <li>
+          <a class="block px-4 py-[18px] rounded-tile no-underline bg-white border border-stroke text-ink 
+                     transition hover:-translate-y-0.5 hover:bg-gradient-to-t hover:from-white hover:to-[#fbfcff] 
+                     hover:shadow-xl focus-visible:outline-none"
+             href="week6.html">
+            <span class="block font-display font-extrabold text-[1.25rem] text-accent">
+              Week 6
+            </span>
+            <small class="block mt-1 text-muted text-sm">
+              Detailfase
+            </small>
+          </a>
+        </li>
+
+        <!-- Je kan hier week 7–10 nog bijzetten als je wilt -->
+        <li>
+          <a class="block px-4 py-[18px] rounded-tile no-underline bg-white border border-stroke text-ink 
+                     transition hover:-translate-y-0.5 hover:bg-gradient-to-t hover:from-white hover:to-[#fbfcff] 
+                     hover:shadow-xl focus-visible:outline-none"
+             href="week7.html">
+            <span class="block font-display font-extrabold text-[1.25rem] text-accent">
+              Week 7
+            </span>
+            <small class="block mt-1 text-muted text-sm">
+              Verder proces
+            </small>
+          </a>
+        </li>
+
+        <li>
+          <a class="block px-4 py-[18px] rounded-tile no-underline bg-white border border-stroke text-ink 
+                     transition hover:-translate-y-0.5 hover:bg-gradient-to-t hover:from-white hover:to-[#fbfcff] 
+                     hover:shadow-xl focus-visible:outline-none"
+             href="week8.html">
+            <span class="block font-display font-extrabold text-[1.25rem] text-accent">
+              Week 8
+            </span>
+            <small class="block mt-1 text-muted text-sm">
+              Fine-tuning
+            </small>
+          </a>
+        </li>
+
+        <li>
+          <a class="block px-4 py-[18px] rounded-tile no-underline bg-white border border-stroke text-ink 
+                     transition hover:-translate-y-0.5 hover:bg-gradient-to-t hover:from-white hover:to-[#fbfcff] 
+                     hover:shadow-xl focus-visible:outline-none"
+             href="week9.html">
+            <span class="block font-display font-extrabold text-[1.25rem] text-accent">
+              Week 9
+            </span>
+            <small class="block mt-1 text-muted text-sm">
+              Laatste iteraties
+            </small>
+          </a>
+        </li>
+
+        <li>
+          <a class="block px-4 py-[18px] rounded-tile no-underline bg-white border border-stroke text-ink 
+                     transition hover:-translate-y-0.5 hover:bg-gradient-to-t hover:from-white hover:to-[#fbfcff] 
+                     hover:shadow-xl focus-visible:outline-none"
+             href="week10.html">
+            <span class="block font-display font-extrabold text-[1.25rem] text-accent">
+              Week 10
+            </span>
+            <small class="block mt-1 text-muted text-sm">
+              Afwerking
+            </small>
+          </a>
+        </li>
       </ul>
     </nav>
 
-    <section class="card">
-      <h2>Wat vind je hier?</h2>
+    <!-- Intro card -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow-[0_0_0_1px_rgba(0,0,0,0.02),0_8px_24px_rgba(0,0,0,0.04)]">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Wat vind je hier?</h2>
       <p>
         Per week beschrijf ik doelen, beslissingen, proces, problemen/oplossingen, reflectie en volgende stappen.
         Zo is de evolutie van het ontwerp transparant en onderbouwd.
@@ -45,8 +220,9 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
+  <!-- Footer -->
+  <footer class="border-t border-stroke text-muted mt-10 py-4">
+    <div class="max-w-layout mx-auto px-base">
       <small>Laatste update: <!-- datum --></small>
     </div>
   </footer>

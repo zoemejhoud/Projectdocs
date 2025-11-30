@@ -5,41 +5,96 @@
   <title>Week 1: Lost in Tra(i)nslation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",      // achtergrond
+            ink: "#172533",     // tekstkleur
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: {
+            card: "16px",
+          },
+          maxWidth: {
+            layout: "1100px",
+          },
+          spacing: {
+            base: "16px",
+          },
+          fontFamily: {
+            sans: ["Open Sans", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+            display: ["Montserrat", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+          },
+        },
+      },
+    }
+  </script>
 </head>
-<body>
-  <header class="page-header">
-    <div class="container">
-      <nav class="pager top">
-        <a class="backlink" href="index.html">← Home</a>
-        <a class="next" href="week2.html"> Week 2 →</a>
+<body class="min-h-screen bg-bg text-ink font-sans leading-relaxed antialiased">
+  <!-- Header -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-base">
+      <nav class="flex items-center gap-[10px] flex-wrap mb-3">
+        <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week2.html">Week 2 →</a>
       </nav>
-      <h1>Week 1: brainstorm, schetsen & documentatie</h1>
-      <p class="lede">Startfase met focus op probleemafbakening, leesstroom en informatieve architectuur.</p>
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)] mb-2">
+        Week 1: brainstorm, schetsen &amp; documentatie
+      </h1>
+      <p class="text-accent font-bold text-[clamp(1.05rem,2.4vw,1.2rem)] mb-1">
+        Startfase met focus op probleemafbakening, leesstroom en informatieve architectuur.
+      </p>
     </div>
   </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>Doelen</h2>
-      <ul>
+  <!-- Main content -->
+  <main class="max-w-layout mx-auto px-base mt-6 mb-10">
+    <!-- Card 1 -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow-[0_0_0_1px_rgba(0,0,0,0.02),0_8px_24px_rgba(0,0,0,0.04)]">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Doelen</h2>
+      <ul class="list-disc pl-5 mt-1 space-y-1">
         <li>Brainstormen over de kerninformatie voor een vertrekbord.</li>
         <li>Schetsen maken en de natuurlijke leesvolgorde definiëren.</li>
         <li>Eerste documentatie verzamelen (wayfinding, OV-borden, toegankelijkheid).</li>
       </ul>
     </section>
 
-    <section class="card">
-      <h2>Schetsen: wat, waar en waarom?</h2>
-      <p>
+    <!-- Card 2 -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow-[0_0_0_1px_rgba(0,0,0,0.02),0_8px_24px_rgba(0,0,0,0.04)]">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Schetsen: wat, waar en waarom?</h2>
+      <p class="mb-3">
         Ik tekende rijen met <em>vertrektijd</em>, <em>bestemming</em>, <em>spoor</em> en <em>status</em>. De leesstroom is
         bewust: <strong>tijd → statuskleur → bestemming → spoor</strong>. Iconen (rolstoel, fiets) noteerde ik met tekstlabels
         i.p.v. alleen pictogrammen om ambiguïteit te vermijden.
       </p>
-      <ul>
+
+      <!-- FIGUUR MET JE SCAN / FOTO -->
+      <figure class="mt-4">
+        <!-- Pas de bestandsnaam in src aan naar jouw echte afbeelding -->
+        <img
+          src="week 1 foto .png"
+          alt="Schets van vertrekbord en interface met vertrektijden, lijn, trein en statuskleuren."
+          class="w-full max-w-3xl mx-auto rounded-card border border-stroke shadow-[0_0_0_1px_rgba(0,0,0,0.02),0_6px_18px_rgba(0,0,0,0.06)]"
+        />
+        <figcaption class="mt-2 text-sm text-muted text-center">
+          Eerste schets van het vertrekbord: combinatie van lijnschema, vertrektijden en statuskleuren.
+        </figcaption>
+      </figure>
+
+      <ul class="list-disc pl-5 mt-4 space-y-1">
         <li><strong>Tijd links:</strong> eerste scananker voor reizigers.</li>
         <li><strong>Status naast tijd:</strong> kleur + label versnelt begrip.</li>
         <li><strong>Bestemming centraal:</strong> ruimte voor lange NL/FR-namen.</li>
@@ -47,8 +102,9 @@
       </ul>
     </section>
 
-    <section class="card">
-      <h2>Documentatie & notities</h2>
+    <!-- Card 3 -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow-[0_0_0_1px_rgba(0,0,0,0.02),0_8px_24px_rgba(0,0,0,0.04)]">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Documentatie &amp; notities</h2>
       <p>
         Ik bekeek referenties van vertrekborden en noteerde principes: voldoende contrast, consistente kolommen,
         kleur nooit als enige drager (altijd met tekst/cijfers), en duidelijke hiërarchie tussen tijd, bestemming,
@@ -56,19 +112,22 @@
       </p>
     </section>
 
-    <section class="card">
-      <h2>Volgende stap</h2>
+    <!-- Card 4 -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow-[0_0_0_1px_rgba(0,0,0,0.02),0_8px_24px_rgba(0,0,0,0.04)]">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Volgende stap</h2>
       <p>De schetsen vertalen naar een eerste digitale versie en testen hoe compact én duidelijk dit kan.</p>
     </section>
 
-    <nav class="pager bottom container">
-      <a class="backlink" href="index.html">← Home</a>
-      <a class="next" href="week2.html">Volgende: Week 2 →</a>
+    <!-- Bottom pager -->
+    <nav class="flex items-center gap-[10px] flex-wrap mt-4">
+      <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="index.html">← Home</a>
+      <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week2.html">Volgende: Week 2 →</a>
     </nav>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
+  <!-- Footer -->
+  <footer class="border-t border-stroke text-muted mt-10 py-4">
+    <div class="max-w-layout mx-auto px-base">
       <small>Laatste update: <!-- datum --></small>
     </div>
   </footer>

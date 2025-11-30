@@ -2,41 +2,86 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <title>Week 6 — Lost in Tra(i)nslation</title>
+  <title>Week 6 — Documentatie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",
+            ink: "#172533",
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: {
+            card: "16px",
+          },
+          maxWidth: {
+            layout: "1100px",
+          },
+          spacing: {
+            base: "16px",
+          },
+          fontFamily: {
+            sans: ["Open Sans", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+            display: ["Montserrat", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+          },
+        },
+      },
+    }
+  </script>
 </head>
 
-<body>
-  <header class="page-header">
-    <div class="container">
-      <nav class="pager top">
-        <a class="backlink" href="index.html">← Home</a>
-        <div class="spacer"></div>
-        <a class="prev" href="week5.html">← Week 5</a>
+<body class="min-h-screen bg-bg text-ink font-sans leading-relaxed antialiased">
+  <!-- Header -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-base">
+      <nav class="flex items-center gap-[10px] flex-wrap mb-3">
+        <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week5.html">← Week 5</a>
+        <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week7.html">Week 7 →</a>
       </nav>
-      <h1>Week 6 — documentatie komt hier</h1>
-      <p class="lede">Deze week ga ik mijn proces verder uitbreiden.</p>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)] mb-2">
+        Week 6 — Documentatie
+      </h1>
+
+      <p class="text-accent font-bold text-[clamp(1.05rem,2.4vw,1.2rem)] mb-1">
+        Deze week werk ik verder aan mijn ontwerp en proces.
+      </p>
     </div>
   </header>
 
-  <main class="container">
-    <section class="card">
-      <p>Deze pagina vul ik later in.</p>
+  <!-- Main -->
+  <main class="max-w-layout mx-auto px-base mt-6 mb-10">
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow-[0_0_0_1px_rgba(0,0,0,0.02),0_8px_24px_rgba(0,0,0,0.04)]">
+      <p>Content voor week 6 komt hier.</p>
     </section>
 
-    <nav class="pager bottom container">
-      <a class="prev" href="week5.html">← Week 5</a>
-      <a class="backlink" href="index.html">↑ Home</a>
+    <!-- Bottom pager -->
+    <nav class="flex items-center gap-[10px] flex-wrap mt-4">
+      <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week5.html">← Week 5</a>
+      <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week7.html">Week 7 →</a>
     </nav>
   </main>
 
-  <footer class="site-footer">
-    <div class="container"><small>Laatste update: <!-- datum --></small></div>
+  <!-- Footer -->
+  <footer class="border-t border-stroke text-muted mt-10 py-4">
+    <div class="max-w-layout mx-auto px-base">
+      <small>Laatste update: <!-- datum --></small>
+    </div>
   </footer>
 </body>
 </html>

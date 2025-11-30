@@ -5,74 +5,141 @@
   <title>Week 3 — Lost in Tra(i)nslation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",
+            ink: "#172533",
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: { card: "16px" },
+          maxWidth: { layout: "1100px" },
+          spacing: { base: "16px" },
+          fontFamily: {
+            sans: ["Open Sans", "system-ui", "-apple-system"],
+            display: ["Montserrat", "system-ui", "-apple-system"],
+          },
+        },
+      },
+    }
+  </script>
 </head>
-<body>
-  <header class="page-header">
-    <div class="container">
-      <nav class="pager top">
-        <a class="backlink" href="index.html">← Home</a>
-        <div class="spacer"></div>
-        <a class="prev" href="week2.html">← Week 2</a>
+
+<body class="bg-bg text-ink font-sans antialiased leading-relaxed">
+
+  <!-- HEADER -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-base">
+      <nav class="flex items-center gap-[10px] mb-3 flex-wrap">
+        <a class="font-bold text-accent hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent hover:underline" href="week2.html">← Week 2</a>
       </nav>
-      <h1>Week 3: terug naar documentatie en een nieuw, consistenter ontwerp</h1>
-      <p class="lede">Herwerking met duidelijk grid, hiërarchie, contrast en betere statuslabels.</p>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)]">
+        Week 3 — terug naar documentatie en een nieuw, consistenter ontwerp
+      </h1>
+      <p class="text-accent font-bold text-[clamp(1.05rem,2.4vw,1.2rem)]">
+        Herwerking met duidelijk grid, hiërarchie, contrast en betere statuslabels.
+      </p>
     </div>
   </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>Wat heb ik onderzocht?</h2>
-      <ul>
+  <!-- MAIN -->
+  <main class="max-w-layout mx-auto px-base mt-6 mb-12">
+
+    <!-- CARD 1 -->
+    <section class="bg-card rounded-card border border-stroke p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Wat heb ik onderzocht?</h2>
+      <ul class="list-disc pl-5 space-y-1">
         <li>NMBS/SNCB-borden & OV-wayfinding (contrast, volgorde, iconen).</li>
-        <li>Typografische hiërarchie voor lijsten/tabellen.</li>
-        <li>Toegankelijkheid: kleur niet alleen, voldoende contrast, labels bij iconen.</li>
+        <li>Typografische hiërarchie voor lijsten en tabellen.</li>
+        <li>Toegankelijkheid: kleur niet alleen, contrast, labels bij iconen.</li>
       </ul>
     </section>
 
-    <section class="card">
-      <h2>Nieuwe ontwerpkeuzes (en waarom)</h2>
-      <ul>
-        <li><strong>Strak kolomgrid:</strong> vaste breedtes voor tijd | bestemming | spoor | status.</li>
-        <li><strong>Hiërarchie:</strong> tijd groot en vet, bestemming medium, spoor/status kleiner maar duidelijk.</li>
-        <li><strong>Kleur + tekst verplicht:</strong> geel met “+ X min”; rood met “Geannuleerd / Supprimé”.</li>
-        <li><strong>Contrast aangescherpt:</strong> donkere box afwisselende met een lichtere box, lichte tekst voor afstandsleesbaarheid.</li>
-        <li><strong>Contextinfo ondergeschikt:</strong> klok/weer kleiner, focus op de lijst met vertrekken.</li>
-        <li><strong>Tweetaligheid consistent:</strong> vaste volgorde NL/FR.</li>
+    <!-- CARD 2 MET FOTO’S -->
+    <section class="bg-card rounded-card border border-stroke p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-3">Nieuwe ontwerpkeuzes (met testen)</h2>
+      <p class="mb-4">Hier zie je drie digitale testversies die ik gebruikte om hiërarchie, kleur en navigatie opnieuw te evalueren.</p>
+
+      <!-- FOTO 1 -->
+      <figure class="mb-6">
+        <img src="week 2.png"
+             alt="Eerste layout test"
+             class="w-full rounded-card border border-stroke shadow">
+        <figcaption class="text-sm text-muted text-center mt-2">
+          Variant 1 — test van nieuwe structuur en modulaire onderdelen (perron, richting, iconen).
+        </figcaption>
+      </figure>
+
+      <!-- FOTO 2 -->
+      <figure class="mb-6">
+        <img src="scherm2.png"
+             alt="Tweede layout test"
+             class="w-full rounded-card border border-stroke shadow">
+        <figcaption class="text-sm text-muted text-center mt-2">
+          Variant 2 — focus op lijnvisualisatie + grotere cijfers voor duidelijkheid.
+        </figcaption>
+      </figure>
+
+      <!-- FOTO 3 -->
+      <figure>
+        <img src="scherm3.png"
+             alt="Derde ontwerp test"
+             class="w-full rounded-card border border-stroke shadow">
+        <figcaption class="text-sm text-muted text-center mt-2">
+          Variant 3 — uitgewerkte lijst van vertrektijden met kleurcodering en tweetaligheid.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- CARD 3 -->
+    <section class="bg-card rounded-card border border-stroke p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Wat is nu beter dan week 2?</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Strakker grid, rustiger ritme.</li>
+        <li>Verbeterde scanbaarheid van tijd → bestemming → spoor → status.</li>
+        <li>Altijd kleur + tekst voor dubbel zekere statuscommunicatie.</li>
       </ul>
     </section>
 
-    <section class="card">
-      <h2>Wat is nu beter dan week 2?</h2>
-      <ul>
-        <li>Snellere scanbaarheid (tijd → bestemming → spoor → status).</li>
-        <li>Rustiger ritme; geen “dansende” kolommen.</li>
-        <li>Minder ambigu: status altijd met woorden + cijfers naast kleur.</li>
+    <!-- CARD 4 -->
+    <section class="bg-card rounded-card border border-stroke p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">To do</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Feedback vragen.</li>
+        <li>Kritisch herbekijken.</li>
+        <li>Volgende iteraties voorbereiden.</li>
       </ul>
     </section>
 
-    <section class="card">
-      <h2>To do</h2>
-      <ul>
-        <li> feedback vragen aan meerdere mensen rondom mij.</li>
-        <li>Kritisch kijken.</li>
-        <li>...</li>
-      </ul>
-    </section>
-
-    <nav class="pager bottom container">
-      <a class="prev" href="week2.html">← Week 2</a>
-      <a class="backlink" href="index.html">↑ Home</a>
+    <!-- NAV -->
+    <nav class="flex items-center gap-[10px] mt-4">
+      <a class="font-bold text-accent hover:underline" href="week2.html">← Week 2</a>
+      <a class="font-bold text-accent hover:underline" href="week4.html">→ week 4</a>
     </nav>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
+  <!-- FOOTER -->
+  <footer class="border-t border-stroke text-muted py-4">
+    <div class="max-w-layout mx-auto px-base">
       <small>Laatste update: <!-- datum --></small>
     </div>
   </footer>
+
 </body>
 </html>

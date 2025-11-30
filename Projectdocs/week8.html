@@ -2,37 +2,31 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <title>Week 5 — Lost in Tra(i)nslation</title>
+  <title>Week 8 — Documentatie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
-  <!-- Tailwind via CDN -->
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            bg: "#e9e6ee",      // achtergrond
-            ink: "#172533",     // tekstkleur
+            bg: "#e9e6ee",
+            ink: "#172533",
             muted: "#5c6a78",
             card: "#ffffff",
             stroke: "#e3e6ec",
             accent: "#153a54",
           },
-          borderRadius: {
-            card: "16px",
-          },
-          maxWidth: {
-            layout: "1100px",
-          },
-          spacing: {
-            base: "16px",
-          },
+          borderRadius: { card: "16px" },
+          maxWidth: { layout: "1100px" },
+          spacing: { base: "16px" },
           fontFamily: {
             sans: ["Open Sans", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
             display: ["Montserrat", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
@@ -50,28 +44,30 @@
       <nav class="flex items-center gap-[10px] flex-wrap mb-3">
         <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="index.html">← Home</a>
         <div class="flex-1"></div>
-        <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week4.html">← Week 4</a>
-        <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week6.html">Week 6 →</a>
+        <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week7.html">← Week 7</a>
+        <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week9.html">Week 9 →</a>
       </nav>
+
       <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)] mb-2">
-        Week 5 — documentatie komt hier
+        Week 8 — Documentatie
       </h1>
+
       <p class="text-accent font-bold text-[clamp(1.05rem,2.4vw,1.2rem)] mb-1">
         Deze week werk ik verder aan mijn ontwerp en proces.
       </p>
     </div>
   </header>
 
-  <!-- Main content -->
+  <!-- Main -->
   <main class="max-w-layout mx-auto px-base mt-6 mb-10">
     <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow-[0_0_0_1px_rgba(0,0,0,0.02),0_8px_24px_rgba(0,0,0,0.04)]">
-      <p>Deze pagina vul ik later in.</p>
+      <p>week 8 was examenweek.</p>
     </section>
 
-    <!-- Bottom pager -->
+    <!-- Pager bottom -->
     <nav class="flex items-center gap-[10px] flex-wrap mt-4">
-      <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week4.html">← Week 4</a>
-      <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week6.html">Week 6 →</a>
+      <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week7.html">← Week 7</a>
+      <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week9.html">Week 9 →</a>
     </nav>
   </main>
 
