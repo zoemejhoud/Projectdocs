@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 7 — Documentatie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",
+            ink: "#172533",
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: { card: "16px" },
+          maxWidth: { layout: "1100px" },
+          spacing: { base: "16px" },
+          fontFamily: {
+            sans: ["Open Sans", "system-ui", "-apple-system"],
+            display: ["Montserrat", "system-ui", "-apple-system"],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-bg text-ink font-sans leading-relaxed antialiased">
+  <!-- Header -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-base">
+      <nav class="flex items-center gap-[10px] flex-wrap mb-3">
+        <a class="font-bold text-accent px-2 py-1 hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent px-2 py-1 hover:underline" href="week6.html">← Week 6</a>
+        <a class="font-bold text-accent px-2 py-1 hover:underline" href="week8.html">Week 8 →</a>
+      </nav>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)] mb-2">
+        Week 7
+      </h1>
+
+      <p class="text-accent font-semibold text-[clamp(1.05rem,2.4vw,1.2rem)] mb-1">
+        Tussen vakantie, schoolwerk en examenvrees toch verder bouwen.
+      </p>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-layout mx-auto px-base mt-6 mb-10">
+    <section class="bg-card border border-stroke rounded-card p-5 mb-6 shadow-[0_0_0_1px_rgba(0,0,0,0.02),0_8px_24px_rgba(0,0,0,0.04)]">
+      <p class="mb-3">
+        Week 7 viel samen met de herfstvakantie. Dat klinkt chill, maar in
+        realiteit was het vooral een mix van taken voor andere vakken, verder
+        werken aan deze website en stilaan beginnen denken aan de examens.
+        Daardoor voelde deze week best zwaar aan.
+      </p>
+
+      <p class="mb-3">
+        Ik heb dus niet mega grote sprongen gemaakt in Figma, maar ik ben wel
+        blijven sleutelen aan de website. HTML blijft iets waar ik nog vaak over
+        moet nadenken, maar stap voor stap begint het te lukken.
+      </p>
+
+      <p class="mb-5">
+        Het belangrijkste resultaat van deze week is dat ik eindelijk een
+        layout heb gevonden waar ik mij goed bij voel: simpel, overzichtelijk en
+        rustig. Vanaf hier kan ik verder bouwen.
+      </p>
+
+      <!-- FOTO WEBSITEOPBOUW -->
+      <figure class="mt-2 text-center">
+        <img
+          src="../images/websiteopbouw.png"
+          alt="Inspiratie en structuur voor de website-opbouw"
+          class="mx-auto rounded-card border border-stroke shadow max-w-[600px] w-full"
+        />
+        <figcaption class="mt-2 text-sm text-muted">
+          Structuur voor de uiteindelijke website-layout.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Pager bottom -->
+    <nav class="flex items-center gap-[10px] flex-wrap mt-4">
+      <a class="font-bold text-accent px-2 py-1 hover:underline" href="week6.html">← Week 6</a>
+      <a class="font-bold text-accent px-2 py-1 hover:underline" href="week8.html">Week 8 →</a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-stroke text-muted mt-10 py-4">
+    <div class="max-w-layout mx-auto px-base text-xs sm:text-sm">
+      <small>Zöe Mejhoud — 1GDM2 • Project: Lost in Tra(i)nslation</small>
+    </div>
+  </footer>
+</body>
+</html>

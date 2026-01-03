@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 3 — Lost in Tra(i)nslation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",
+            ink: "#172533",
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: { card: "16px" },
+          maxWidth: { layout: "1100px" },
+          fontFamily: {
+            sans: ["Open Sans","system-ui"],
+            display: ["Montserrat","system-ui"],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-bg text-ink font-sans antialiased leading-relaxed">
+
+  <!-- HEADER -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-base">
+      <nav class="flex items-center gap-[10px] mb-3 flex-wrap">
+        <a class="font-bold text-accent hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent hover:underline" href="week2.html">← Week 2</a>
+        <a class="font-bold text-accent hover:underline" href="week4.html">Week 4 →</a>
+      </nav>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)]">
+        Week 3
+      </h1>
+
+      <p class="text-accent font-semibold text-[clamp(1.05rem,2.4vw,1.2rem)]">
+        Terug naar de documentatie en een duidelijker, consistenter ontwerp.
+      </p>
+
+      <p class="text-muted text-sm mt-1">
+        Zöe Mejhoud — 1GDM2
+      </p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="max-w-layout mx-auto px-base mt-6 mb-12">
+
+    <!-- CARD 1 -->
+    <section class="bg-card rounded-card border border-stroke p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Wat heb ik onderzocht?</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Voorbeelden van NMBS/SNCB-borden en andere OV-signalisatie.</li>
+        <li>Hoe typografie gebruikt wordt in lijsten en tabellen.</li>
+        <li>Toegankelijkheid: genoeg contrast, tekst bij iconen, kleur nooit alleen gebruiken.</li>
+      </ul>
+    </section>
+
+    <!-- CARD 2 MET FOTO’S -->
+    <section class="bg-card rounded-card border border-stroke p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-3">Nieuwe ontwerpversies</h2>
+
+      <p class="mb-4">
+        Ik heb een keuze gemaakt en daarop verder gewerkt, het was vooral moeilijk om
+        alle informatie zo compact mogelijk te krijgen maar wel de leesbaarheid te behouden.
+      </p>
+
+      <!-- FOTO 1 -->
+      <figure class="mb-10">
+        <img
+          src="../images/week 2.png"
+          alt="Nieuwe testlayout van het vertrekbord."
+          class="w-full max-w-2xl mx-auto rounded-card border border-stroke shadow"
+        />
+        <figcaption class="text-sm text-muted text-center mt-2">
+          Versie 1 — de gekozen versie.
+        </figcaption>
+      </figure>
+
+      <!-- FOTO 2 -->
+      <figure class="mb-10">
+        <img
+          src="../images/scherm2.png"
+          alt="Tweede schermontwerp van het vertrekbord."
+          class="w-full max-w-2xl mx-auto rounded-card border border-stroke shadow"
+        />
+        <figcaption class="text-sm text-muted text-center mt-2">
+          Versie 2 — een perronscherm gemaakt.
+        </figcaption>
+      </figure>
+
+      <!-- FOTO 3 -->
+      <figure>
+        <img
+          src="../images/scherm3.png"
+          alt="Derde schermontwerp met vertrektijden en statuskleuren."
+          class="w-full max-w-sm mx-auto rounded-card border border-stroke shadow"
+
+        />
+        <figcaption class="text-sm text-muted text-center mt-2">
+          Versie 3 — een wagonscherm gemaakt.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- CARD 3 -->
+    <section class="bg-card rounded-card border border-stroke p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Wat is nu beter dan in week 2?</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Het grid is duidelijker en het oogt minder druk.</li>
+        <li>De volgorde tijd → bestemming → spoor → status blijft logisch en herkenbaar.</li>
+        <li>Status is altijd kleur + tekst, zodat niemand info mist.</li>
+        <li>Belangrijke info valt beter op door contrast en hiërarchie.</li>
+      </ul>
+    </section>
+
+    <!-- CARD 4 -->
+    <section class="bg-card rounded-card border border-stroke p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">To do voor volgende week</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Feedback vragen op de versies.</li>
+      </ul>
+    </section>
+
+    <!-- NAV -->
+    <nav class="flex items-center gap-[10px] mt-4 flex-wrap">
+      <a class="font-bold text-accent hover:underline" href="week2.html">← Week 2</a>
+      <a class="font-bold text-accent hover:underline" href="week4.html">Week 4 →</a>
+    </nav>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-stroke text-muted py-4">
+    <div class="max-w-layout mx-auto px-base text-xs sm:text-sm">
+      <small>Zöe Mejhoud — 1GDM2 • Project: Lost in Tra(i)nslation</small>
+    </div>
+  </footer>
+
+</body>
+</html>

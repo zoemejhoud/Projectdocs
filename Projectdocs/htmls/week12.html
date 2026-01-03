@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 12 — Lost in Tra(i)nslation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",
+            ink: "#172533",
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: { card: "16px" },
+          maxWidth: { layout: "1100px" },
+          spacing: { base: "16px" },
+          fontFamily: {
+            sans: ["Open Sans","system-ui","-apple-system"],
+            display: ["Montserrat","system-ui","-apple-system"],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-bg text-ink font-sans antialiased leading-relaxed">
+
+  <!-- HEADER -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-base">
+
+      <nav class="flex items-center gap-[10px] mb-3 flex-wrap">
+        <a class="font-bold text-accent hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent hover:underline" href="week11.html">← Week 11</a>
+        <a class="font-bold text-accent hover:underline" href="index.html">Einde →</a>
+      </nav>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)]">
+        Week 12 
+      </h1>
+
+      <p class="text-accent font-semibold text-[clamp(1.05rem,2.4vw,1.2rem)]">
+        Terugkijken op het project & mijn finale prototype.
+      </p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="max-w-layout mx-auto px-base mt-6 mb-12">
+
+    <!-- REFLECTIE -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-6 shadow">
+
+      <p class="mb-3">
+        In week 12 heb ik vooral verdergewerkt aan zowel mijn website als mijn
+        Figma-prototype. Dit project was best een uitdaging, vooral omdat je echt moet
+        nadenken <strong>hoe mensen navigeren</strong> en wat logisch aanvoelt.
+      </p>
+
+      <p class="mb-3">
+        Ik heb gemerkt dat design veel meer is dan “iets mooi in elkaar steken”.
+        Elke knop, kleur of lay-outkeuze moet een reden hebben. Je denkt constant na:
+        <em>Hoe gaat iemand dit gebruiken?</em> en <em>Snap je direct wat je moet doen?</em>
+      </p>
+
+      <p class="mb-3">
+        De website bouwen vond ik ook niet altijd makkelijk. HTML is voor mij nog
+        redelijk nieuw en soms begreep ik dingen gewoon niet meteen. Maar stap voor
+        stap begon het wel meer logisch te worden en eigenlijk vond ik het ook wel
+        leuk om te zien dat het echt werkte.
+      </p>
+
+      <p class="mb-3">
+        In deze fase heb ik dus zowel mijn prototype verder afgewerkt als mijn website
+        opgebouwd. Het was soms zoeken en testen, maar ik heb veel geleerd over
+        structuur, gebruiksvriendelijkheid en vooral: hoe belangrijk het is om
+        eerst na te denken voor je begint te ontwerpen.
+      </p>
+
+      <p>
+        Kortom: een uitdagende maar leerrijke opdracht en ik zie mijn eigen groei
+        hier echt in terug.
+      </p>
+
+    </section>
+
+    <!-- FIGMA KNOP -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-6 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-3">
+        Finale Figma prototype
+      </h2>
+
+      <a
+        href="https://www.figma.com/design/16JneNksqmYAK9FpDRBUXH/MejhoudZ%C3%B6e_PRTT_Mobiletrainslation?node-id=0-1&m=dev&t=wlB4tjsOasFV718a-1"
+        target="_blank"
+        class="inline-block bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition no-underline"
+      >
+        📱 Bekijk mijn finale mobile app prototype
+      </a>
+
+      <p class="text-muted text-sm mt-2">
+        (Open in Figma — klik door de schermen om de flow te volgen)
+      </p>
+    </section>
+
+    <!-- NAV ONDERAAN -->
+    <nav class="flex items-center gap-[10px] mt-4 flex-wrap">
+      <a class="font-bold text-accent hover:underline" href="week11.html">← Week 11</a>
+      <a class="font-bold text-accent hover:underline" href="index.html">Einde →</a>
+    </nav>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-stroke py-4 text-muted">
+    <div class="max-w-layout mx-auto px-base text-xs sm:text-sm">
+      <small>
+        Zöe Mejhoud — 1GDM2 • Project: Lost in Tra(i)nslation
+      </small>
+    </div>
+  </footer>
+
+</body>
+</html>

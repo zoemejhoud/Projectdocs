@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 2 — Lost in Tra(i)nslation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",
+            ink: "#172533",
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: { card: "16px" },
+          maxWidth: { layout: "1100px" },
+          spacing: { base: "16px" },
+          fontFamily: {
+            sans: ["Open Sans", "system-ui", "-apple-system"],
+            display: ["Montserrat", "system-ui", "-apple-system"],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-bg text-ink font-sans leading-relaxed antialiased">
+  <!-- HEADER -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-base">
+      <nav class="flex items-center gap-[10px] flex-wrap mb-3">
+        <a class="font-bold text-accent px-2 py-1 hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent px-2 py-1 hover:underline" href="week1.html">← Week 1</a>
+        <a class="font-bold text-accent px-2 py-1 hover:underline" href="week3.html">Week 3 →</a>
+      </nav>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)]">
+        Week 2
+      </h1>
+      <p class="text-accent font-semibold text-[clamp(1.05rem,2.4vw,1.2rem)]">
+        Eerste digitale versie: testen met structuur en compactheid.
+      </p>
+
+      <!-- Naam + groep -->
+      <p class="text-muted text-sm mt-1">
+        Zöe Mejhoud — 1GDM2
+      </p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="max-w-layout mx-auto px-base mt-6 mb-10">
+
+    <!-- CARD 1 -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Doelen</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Mijn schetsen omzetten naar een eerste digitale versie.</li>
+        <li>Een logische, scanbare volgorde zoeken (tijd → bestemming → spoor → status).</li>
+        <li>Alles zo helder mogelijk houden, zonder dat het bord overvol wordt.</li>
+      </ul>
+    </section>
+
+    <!-- CARD 2 -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Waar liep ik op vast?</h2>
+      <p>
+        Ik zat vooral te twijfelen over hoe breed elke kolom moest zijn, welke kleuren ik zou gebruiken
+        en hoe ver ik kon gaan in het verkleinen zonder dat het onleesbaar werd. Ik merkte dat kleine
+        verschuivingen in de kolommen meteen invloed hadden op hoe rustig of chaotisch het geheel aanvoelde.
+      </p>
+    </section>
+
+    <!-- CARD 3 MET FOTO’S -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-3">Eerste digitale versies</h2>
+      <p class="mb-4">
+        Dit zijn mijn eerste digitale probeersels. Ik heb vooral gespeeld met kleur, kolomverdeling en
+        hoe duidelijk de info leesbaar bleef vanop afstand.
+      </p>
+
+      <!-- FOTO 1 -->
+      <figure class="mb-6">
+        <img
+          src="../images/week 2.2.png"
+          alt="Eerste digitale versie van het vertrekbord."
+          class="w-full max-w-3xl mx-auto rounded-card border border-stroke shadow"
+        />
+        <figcaption class="text-center text-sm text-muted mt-2">
+          Variant 1 — donkere achtergrond, duidelijke kolommen en contrasten.
+        </figcaption>
+      </figure>
+
+      <!-- FOTO 2 -->
+      <figure class="mb-6">
+        <img
+          src="../images/week 2.png"
+          alt="Tweede digitale versie van het vertrekbord."
+          class="w-full max-w-3xl mx-auto rounded-card border border-stroke shadow"
+        />
+        <figcaption class="text-center text-sm text-muted mt-2">
+          Variant 2 — iets lichtere sfeer, andere manier van layout
+        </figcaption>
+      </figure>
+
+      <!-- FOTO 3 -->
+      <figure>
+        <img
+          src="../images/week 2;3.png"
+          alt="Derde digitale versie van het vertrekbord."
+          class="w-full max-w-3xl mx-auto rounded-card border border-stroke shadow"
+        />
+        <figcaption class="text-center text-sm text-muted mt-2">
+          Variant 3 — een kleur variant om te kijken wat dat zou geven.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- CARD 4 -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Wat neem ik mee naar week 3?</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>De volgorde tijd → bestemming → spoor → status voelt logisch, die hou ik.</li>
+        <li>Status moet altijd kleur + tekst zijn, niet alleen kleur.</li>
+        <li>Ik moet nog meer letten op rust in het ontwerp en de leesbaarheid.</li>
+      </ul>
+    </section>
+
+    <!-- NAV BOTTOM -->
+    <nav class="flex items-center gap-[10px] flex-wrap mt-4">
+      <a class="font-bold text-accent hover:underline" href="week1.html">← Week 1</a>
+      <a class="font-bold text-accent hover:underline" href="week3.html">Week 3 →</a>
+    </nav>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-stroke text-muted mt-10 py-4">
+    <div class="max-w-layout mx-auto px-base text-xs sm:text-sm">
+      <small>Zöe Mejhoud — 1GDM2 • Project: Lost in Tra(i)nslation</small>
+    </div>
+  </footer>
+
+</body>
+</html>

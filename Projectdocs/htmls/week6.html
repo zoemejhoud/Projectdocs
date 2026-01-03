@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 6 — Lost in Tra(i)nslation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",
+            ink: "#172533",
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: {
+            card: "16px",
+          },
+          maxWidth: {
+            layout: "1100px",
+          },
+          spacing: {
+            base: "16px",
+          },
+          fontFamily: {
+            sans: ["Open Sans", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+            display: ["Montserrat", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-bg text-ink font-sans leading-relaxed antialiased">
+  <!-- Header -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-base">
+      <nav class="flex items-center gap-[10px] flex-wrap mb-3">
+        <a class="font-bold text-accent px-2 py-1 hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent px-2 py-1 hover:underline" href="week5.html">← Week 5</a>
+        <a class="font-bold text-accent px-2 py-1 hover:underline" href="week7.html">Week 7 →</a>
+      </nav>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)] mb-1">
+        Week 6 
+      </h1>
+
+      <p class="text-accent font-semibold text-[clamp(1.05rem,2.4vw,1.2rem)] mb-1">
+        Focus op het bouwen van de website, Figma even op pauze.
+      </p>
+
+      <p class="text-muted text-sm">
+        Zöe Mejhoud — 1GDM2
+      </p>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-layout mx-auto px-base mt-6 mb-10">
+
+    <!-- Tekst -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow-[0_0_0_1px_rgba(0,0,0,0.02),0_8px_24px_rgba(0,0,0,0.04)]">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Waar heb ik mij op gefocust?</h2>
+
+      <p class="mb-3">
+        In week 6 heb ik me vooral geconcentreerd op het maken van de website zelf.
+        HTML begrijp ik nog niet altijd even goed, dus hier kruipt best veel tijd in.
+        Daardoor is Figma deze week wat meer op de achtergrond geraakt. De verdere
+        uitwerking van het prototype schuif ik dus door naar later, wanneer de basis
+        van de site stabiel staat.
+      </p>
+
+      <p class="mb-3">
+        Ik ben ook bewust gaan zoeken naar voorbeelden van rustige, duidelijke websites.
+        Op basis daarvan heb ik gekozen voor een simpelere layout: duidelijke blokken,
+        veel witruimte en een structuur die logisch aanvoelt.
+      </p>
+
+      <p>
+        Bij dingen die ik niet meteen snapte, heb ik YouTube-tutorials gekeken en
+        ChatGPT gebruikt om bepaalde stukken code of foutmeldingen te begrijpen.
+        Dat kost tijd, maar zo begin ik stilaan beter te snappen wat ik doe in plaats
+        van alles gewoon te kopiëren.
+      </p>
+    </section>
+
+    <!-- Inspiratie-grid -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow-[0_0_0_1px_rgba(0,0,0,0.02),0_8px_24px_rgba(0,0,0,0.04)]">
+      <h2 class="font-display font-bold text-accent text-xl mb-3">Visuele inspiratie</h2>
+      <p class="mb-4">
+        Hieronder enkele van de websites en layouts die ik als referentie gebruikt heb.
+        Vooral de eenvoud, duidelijke typografie en rustige opbouw spraken me aan.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- rij 1 -->
+        <figure class="bg-white rounded-card border border-stroke p-3">
+          <img
+            src="../images/inspiratie1.png"
+            alt="Inspiratiewebsite 1"
+            class="w-full h-auto rounded-card border border-stroke"
+          />
+          <figcaption class="mt-2 text-xs text-muted">
+            Inspiratie 1 — eenvoudige structuur met duidelijke titels.
+          </figcaption>
+        </figure>
+
+        <figure class="bg-white rounded-card border border-stroke p-3">
+          <img
+            src="../images/inspiratie2.png"
+            alt="Inspiratiewebsite 2"
+            class="w-full h-auto rounded-card border border-stroke"
+          />
+          <figcaption class="mt-2 text-xs text-muted">
+            Inspiratie 2 — veel witruimte en rustige typografie.
+          </figcaption>
+        </figure>
+
+        <!-- rij 2 -->
+        <figure class="bg-white rounded-card border border-stroke p-3">
+          <img
+            src="../images/inspiratie3.png"
+            alt="Inspiratiewebsite 3"
+            class="w-full h-auto rounded-card border border-stroke"
+          />
+          <figcaption class="mt-2 text-xs text-muted">
+            Inspiratie 3 — duidelijke hiërarchie tussen titels en tekst.
+          </figcaption>
+        </figure>
+
+        <figure class="bg-white rounded-card border border-stroke p-3">
+          <img
+            src="../images/inspiratie4.png"
+            alt="Inspiratiewebsite 4"
+            class="w-full h-auto rounded-card border border-stroke"
+          />
+          <figcaption class="mt-2 text-xs text-muted">
+            Inspiratie 4 — zoektocht naar websites.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Bottom pager -->
+    <nav class="flex items-center gap-[10px] flex-wrap mt-4">
+      <a class="font-bold text-accent px-2 py-1 hover:underline" href="week5.html">← Week 5</a>
+      <a class="font-bold text-accent px-2 py-1 hover:underline" href="week7.html">Week 7 →</a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-stroke text-muted mt-10 py-4">
+    <div class="max-w-layout mx-auto px-base text-xs sm:text-sm">
+      <small>Zöe Mejhoud — 1GDM2 • Project: Lost in Tra(i)nslation</small>
+    </div>
+  </footer>
+</body>
+</html>

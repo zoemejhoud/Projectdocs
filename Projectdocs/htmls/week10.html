@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 10 — Lost in Tra(i)nslation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",
+            ink: "#172533",
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: { card: "16px" },
+          maxWidth: { layout: "1100px" },
+          spacing: { base: "16px" },
+          fontFamily: {
+            sans: ["Open Sans","system-ui","-apple-system"],
+            display: ["Montserrat","system-ui","-apple-system"],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-bg text-ink font-sans antialiased leading-relaxed">
+
+  <!-- HEADER -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-base">
+      <nav class="flex items-center gap-[10px] mb-3 flex-wrap">
+        <a class="font-bold text-accent hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent hover:underline" href="week9.html">← Week 9</a>
+        <a class="font-bold text-accent hover:underline" href="week11.html">week 11 →</a>
+      </nav>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)]">
+        Week 10 
+      </h1>
+      <p class="text-accent font-semibold text-[clamp(1.05rem,2.4vw,1.2rem)]">
+        Verder werken aan een rustige, duidelijke en gebruiksvriendelijke app.
+      </p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="max-w-layout mx-auto px-base mt-6 mb-12">
+
+    <!-- UITLEG -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-6 shadow">
+      <p class="mb-3">
+        In week 10 ben ik vooral bezig geweest met het aanmaken van verschillende
+        pagina’s in Figma zodat ik straks elk knopje kan linken in de
+        prototype-modus. Het was dus veel voorbereidend werk: schermen dupliceren,
+        structuren herhalen en zorgen dat alles logisch aan elkaar hangt.
+      </p>
+
+      <p class="mb-3">
+        Mijn doel was om een donkere modus te maken die zacht is voor je ogen.
+        Daarom koos ik voor donkere tinten met een opvallende accentkleur. Zo springt
+        belangrijke info er wel uit, maar wordt het scherm niet te fel of druk.
+        Door kleuren heel bewust te gebruiken, zie je ook direct als er iets aan de
+        hand is, zoals een vertraging of een waarschuwing.
+      </p>
+
+      <p class="mb-3">
+        Ik heb geprobeerd om de app zo minimalistisch mogelijk te houden. Sommige
+        pagina’s zijn dus heel rustig en bevatten niet superveel info. Dat is
+        bewust: liever meerdere simpele pagina’s dan één scherm waar alles
+        opgepropt staat.
+      </p>
+
+      <p>
+        Stilaan begon alles samen te vallen: flow, layout, kleurgebruik en
+        leesbaarheid. Nu kan ik de prototype-links leggen en voelt de app steeds
+        meer als een echte toepassing.
+      </p>
+    </section>
+
+    <!-- FIGMA OVERZICHT -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-6 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-4">
+        Overzicht van mijn Figma-opbouw
+      </h2>
+
+      <!-- Rij 1: enkel overzicht -->
+      <figure class="text-center mb-6">
+        <img
+          src="../images/aanmaak paginas.png"
+          alt="Overzicht aanmaak pagina’s in Figma"
+          class="w-full max-w-4xl mx-auto rounded-card border border-stroke shadow"
+        />
+        <figcaption class="text-sm text-muted mt-2">
+          Alle basispagina’s aangemaakt om later goed te kunnen prototypen.
+        </figcaption>
+      </figure>
+
+      <!-- Rij 2: pagina aanmaak 1 + 2 naast elkaar -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+        <figure class="text-center">
+          <img
+            src="../images/pagina aanmaak1.png"
+            alt="Paginaopbouw voorbeeld 1"
+            class="w-full rounded-card border border-stroke shadow"
+          />
+          <figcaption class="text-sm text-muted mt-2">
+            Minimalistisch scherm met donkere layout en duidelijke accentkleur.
+          </figcaption>
+        </figure>
+
+        <figure class="text-center">
+          <img
+            src="../images/pagina aanmaak2.png"
+            alt="Paginaopbouw voorbeeld 2"
+            class="w-full rounded-card border border-stroke shadow"
+          />
+          <figcaption class="text-sm text-muted mt-2">
+            Extra variatie in de flow, maar nog altijd heel rustig gehouden.
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Rij 3: laatste pagina alleen -->
+      <figure class="text-center">
+        <img
+          src="../images/pagina aanmaak3.png"
+          alt="Paginaopbouw voorbeeld 3"
+          class="w-full max-w-4xl mx-auto rounded-card border border-stroke shadow"
+        />
+        <figcaption class="text-sm text-muted mt-2">
+          Focus op leesbaarheid en rust in donkere modus, met genoeg contrast.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- NAV -->
+    <nav class="flex items-center gap-[10px] mt-4 flex-wrap">
+      <a class="font-bold text-accent hover:underline" href="week9.html">← Week 9</a>
+      <a class="font-bold text-accent hover:underline" href="index.html">Einde →</a>
+    </nav>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-stroke py-4 text-muted">
+    <div class="max-w-layout mx-auto px-base text-xs sm:text-sm">
+      <small>Zöe Mejhoud — 1GDM2 • Project: Lost in Tra(i)nslation</small>
+    </div>
+  </footer>
+
+</body>
+</html>

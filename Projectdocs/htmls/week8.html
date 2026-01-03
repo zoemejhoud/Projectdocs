@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 8 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",
+            ink: "#172533",
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: { card: "16px" },
+          maxWidth: { layout: "1100px" },
+          spacing: { base: "16px" },
+          fontFamily: {
+            sans: ["Open Sans", "system-ui"],
+            display: ["Montserrat", "system-ui"],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-bg text-ink font-sans leading-relaxed antialiased">
+
+  <!-- Header -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-base">
+      <nav class="flex items-center gap-[10px] flex-wrap mb-3">
+        <a class="font-bold text-accent px-2 py-1 hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent px-2 py-1 hover:underline" href="week7.html">← Week 7</a>
+        <a class="font-bold text-accent px-2 py-1 hover:underline" href="week9.html">Week 9 →</a>
+      </nav>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)] mb-2">
+        Week 8 
+      </h1>
+
+      <p class="text-accent font-semibold text-[clamp(1.05rem,2.4vw,1.2rem)]">
+        Eerste examenweek, dus minder vooruitgang aan Figma en website.
+      </p>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-layout mx-auto px-base mt-6 mb-10">
+
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">
+        Wat heb ik deze week gedaan?
+      </h2>
+
+      <p class="mb-3">
+        Week 8 viel samen met de eerste examenweek. Dat betekende vooral studeren,
+        plannen en proberen alles wat een beetje onder controle te houden.
+      </p>
+
+      <p class="mb-3">
+        Daardoor lag de focus deze week wat minder op het verder uitwerken van mijn
+        Figma-ontwerp en de website. Ik heb wel kort bekeken waar ik stond en wat er nog
+        moest gebeuren, maar er zijn weinig grote aanpassingen gebeurd in deze fase.
+      </p>
+
+      <p>
+        Vanaf week 9 probeer ik terug vol te hernemen en verder te werken aan de
+        structuur, visuals en laatste verfijningen.
+      </p>
+    </section>
+
+    <!-- Pager bottom -->
+    <nav class="flex items-center gap-[10px] flex-wrap mt-4">
+      <a class="font-bold text-accent px-2 py-1 hover:underline" href="week7.html">← Week 7</a>
+      <a class="font-bold text-accent px-2 py-1 hover:underline" href="week9.html">Week 9 →</a>
+    </nav>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-stroke text-muted mt-10 py-4">
+    <div class="max-w-layout mx-auto px-base text-xs sm:text-sm">
+      <small>Zöe Mejhoud — 1GDM2 • Project: Lost in Tra(i)nslation</small>
+    </div>
+  </footer>
+
+</body>
+</html>

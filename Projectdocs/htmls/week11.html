@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 11 — Lost in Tra(i)nslation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",
+            ink: "#172533",
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: { card: "16px" },
+          maxWidth: { layout: "1100px" },
+          spacing: { base: "16px" },
+          fontFamily: {
+            sans: ["Open Sans","system-ui","-apple-system"],
+            display: ["Montserrat","system-ui","-apple-system"],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-bg text-ink font-sans antialiased leading-relaxed">
+
+  <!-- HEADER -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-base">
+      <nav class="flex items-center gap-[10px] mb-3 flex-wrap">
+        <a class="font-bold text-accent hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent hover:underline" href="week10.html">← Week 10</a>
+        <a class="font-bold text-accent hover:underline" href="week12.html">Week 12 →</a>
+      </nav>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)]">
+        Week 11
+      </h1>
+      <p class="text-accent font-semibold text-[clamp(1.05rem,2.4vw,1.2rem)]">
+        Prototyping afwerken en mezelf een beetje beter leren kennen.
+      </p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="max-w-layout mx-auto px-base mt-6 mb-12">
+
+    <!-- UITLEG -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-6 shadow">
+      <p class="mb-3">
+        In week 11 ben ik vooral bezig geweest met het linken van alle schermen in
+        Figma. Pagina naar pagina, knop naar knop, terugknoppen, flows… alles moest
+        logisch aan elkaar hangen zodat het prototype echt “klopt” wanneer je erdoor
+        klikt.
+      </p>
+
+      <p class="mb-3">
+        Terwijl ik daarmee bezig was, merkte ik ook iets over mezelf: ik werk best
+        chaotisch. Ik spring snel van het ene idee naar het andere en voor ik het wist,
+        begon mijn Figma-file meer en meer op een spinnenweb te lijken. Dat is dus
+        zeker een werkpuntje voor mij: meer structuur in mijn proces houden.
+      </p>
+
+      <p class="mb-3">
+        Hoe meer pagina’s je begint te linken, hoe groter de kans dat je het overzicht
+        verliest. Dat was hier echt de valkuil: als je niet oplet, weet je op den duur
+        niet meer welke knop nu precies naar waar gaat. In deze fase heb ik daarom ook
+        een paar dingen verwijderd of juist toegevoegd, zodat de flow terug duidelijk
+        werd.
+      </p>
+
+      <p class="mb-3">
+        Ik merkte ook dat ik niet van alle extensies en plugins in Figma gebruik kon
+        maken, omdat mijn account-licentie niet wilde activeren. Dat was soms wat
+        frustrerend, maar tegelijk besef ik dat Figma heel veel potentieel heeft.
+        Met meer oefening en een iets betere setup kan ik hier later nog veel meer mee
+        doen.
+      </p>
+
+      <p>
+        Kortom: deze week ging over prototyping, opruimen, linken en leren uit mijn
+        eigen chaos. Niet perfect, maar wel een stap vooruit.
+      </p>
+    </section>
+
+    <!-- SPINNENWEB AFBEELDING -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-6 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-3">
+        Mijn Figma als spinnenweb
+      </h2>
+
+      <figure class="text-center">
+        <img
+          src="../images/spinnenweb.png"
+          alt="Overzicht van de gelinkte Figma-schermen als een spinnenweb"
+          class="w-full max-w-4xl mx-auto rounded-card border border-stroke shadow"
+        />
+        <figcaption class="text-sm text-muted mt-2">
+          Overzicht van alle gelinkte schermen.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- NAV ONDERAAN -->
+    <nav class="flex items-center gap-[10px] mt-4 flex-wrap">
+      <a class="font-bold text-accent hover:underline" href="week10.html">← Week 10</a>
+      <a class="font-bold text-accent hover:underline" href="week12.html">Week 12 →</a>
+    </nav>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-stroke py-4 text-muted">
+    <div class="max-w-layout mx-auto px-base text-xs sm:text-sm">
+      <small>Zöe Mejhoud — 1GDM2 • Project: Lost in Tra(i)nslation</small>
+    </div>
+  </footer>
+
+</body>
+</html>

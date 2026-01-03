@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 1  Lost in Tra(i)nslation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",
+            ink: "#172533",
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: { card: "16px" },
+          maxWidth: { layout: "1100px" },
+          fontFamily: {
+            sans: ["Open Sans","system-ui"],
+            display: ["Montserrat","system-ui"],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-bg text-ink font-sans leading-relaxed antialiased">
+  <!-- Header -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-4">
+      <nav class="flex items-center gap-3 flex-wrap mb-3">
+        <a class="font-bold text-accent hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent hover:underline" href="week2.html">Week 2 →</a>
+      </nav>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)] leading-tight mb-1">
+        Week 1 
+      </h1>
+
+      <p class="text-accent font-semibold text-[clamp(1.05rem,2.4vw,1.2rem)]">
+        Startfase met focus op probleemafbakening, leesstroom en informatieve architectuur.
+      </p>
+
+      <!-- Naam + groep -->
+      <p class="text-muted text-sm mt-1">
+        Zöe Mejhoud — 1GDM2
+      </p>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-layout mx-auto px-4 mt-6 mb-10">
+
+    <!-- Card 1 -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Doelen</h2>
+      <ul class="list-disc pl-5 mt-1 space-y-1">
+        <li>Brainstormen over de kerninformatie voor een vertrekbord.</li>
+        <li>Schetsen maken en de natuurlijke leesvolgorde definiëren.</li>
+        <li>Eerste documentatie verzamelen (wayfinding, OV-borden, toegankelijkheid).</li>
+      </ul>
+    </section>
+
+    <!-- Card 2 -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Schetsen: wat, waar en waarom?</h2>
+
+      <p class="mb-3">
+        Ik tekende rijen met <em>vertrektijd</em>, <em>bestemming</em>, <em>spoor</em> en <em>status</em>.
+        De leesstroom is bewust: <strong>tijd → statuskleur → bestemming → spoor</strong>.
+        Iconen (rolstoel, fiets) noteerde ik met tekstlabels i.p.v. alleen pictogrammen om verwarring te vermijden.
+      </p>
+
+      <!-- FIGUUR -->
+      <figure class="mt-4">
+        <img
+          src=../images/schets-1.png
+          alt="Schets van vertrekbord en interface."
+          class="w-full max-w-xl mx-auto rounded-card border border-stroke shadow"
+        />
+        <figcaption class="mt-2 text-sm text-muted text-center">
+          Eerste schets van het vertrekbord: combinatie van lijnschema, vertrektijden en statuskleuren.
+        </figcaption>
+      </figure>
+
+      <ul class="list-disc pl-5 mt-4 space-y-1">
+        <li><strong>Tijd links:</strong> eerste scananker voor reizigers.</li>
+        <li><strong>Status naast tijd:</strong> kleur + label versnelt begrip.</li>
+        <li><strong>Bestemming centraal:</strong> ruimte voor lange NL/FR-namen.</li>
+        <li><strong>Spoorbubbel rechts:</strong> direct zichtbaar zodra je de juiste regel volgt.</li>
+      </ul>
+    </section>
+
+    <!-- Card 3 -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Documentatie &amp; notities</h2>
+      <p>
+        Ik bekeek referenties van vertrekborden en noteerde principes: voldoende contrast, consistente kolommen,
+        kleur nooit als enige drager (altijd met tekst/cijfers), en duidelijke hiërarchie tussen tijd, bestemming,
+        spoor en status.
+      </p>
+    </section>
+
+    <!-- Card 4 -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Volgende stap</h2>
+      <p>
+        De schetsen vertalen naar een eerste digitale versie en testen hoe compact én duidelijk dit kan.
+      </p>
+    </section>
+
+    <!-- Pager -->
+    <nav class="flex items-center gap-3 flex-wrap mt-4">
+      <a class="font-bold text-accent hover:underline" href="index.html">← Home</a>
+      <a class="font-bold text-accent hover:underline" href="week2.html">Volgende: Week 2 →</a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-stroke text-muted mt-10 py-4">
+    <div class="max-w-layout mx-auto px-4 text-xs sm:text-sm">
+      <small>Zöe Mejhoud — 1GDM2 • Project: Lost in Tra(i)nslation</small>
+    </div>
+  </footer>
+</body>
+</html>

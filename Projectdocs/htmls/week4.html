@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 4 — Lost in Tra(i)nslation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",      // achtergrond
+            ink: "#172533",     // tekstkleur
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: {
+            card: "16px",
+          },
+          maxWidth: {
+            layout: "1100px",
+          },
+          spacing: {
+            base: "16px",
+          },
+          fontFamily: {
+            sans: ["Open Sans", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+            display: ["Montserrat", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-bg text-ink font-sans leading-relaxed antialiased">
+  <!-- Header -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-base">
+      <nav class="flex items-center gap-[10px] flex-wrap mb-3">
+        <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week3.html">← Week 3</a>
+        <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week5.html">Week 5 →</a>
+      </nav>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)] mb-1">
+        Week 4
+      </h1>
+      <p class="text-accent font-semibold text-[clamp(1.05rem,2.4vw,1.2rem)] mb-1">
+        Eerste vertaling naar mobile screens: home, treinrit en ticket.
+      </p>
+      <p class="text-muted text-sm">
+        Zöe Mejhoud — 1GDM2
+      </p>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="max-w-layout mx-auto px-base mt-6 mb-10">
+
+    <!-- Doelen -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Doelen van deze week</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>De info van het vertrekbord vertalen naar een mobile app.</li>
+        <li>Een logische flow maken tussen home, treinrit en ticket.</li>
+        <li>Testen of alles nog leesbaar blijft op een klein scherm.</li>
+      </ul>
+    </section>
+
+    <!-- Beschrijving + screenshots -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-3">Van vertrekbord naar app</h2>
+      <p class="mb-4">
+        In plaats van alles op één groot bord te tonen, heb ik de info opgesplitst in drie schermen:
+        een homepagina met de belangrijkste acties, een scherm voor de treinrit zelf en een ticketview.
+        Zo kan de gebruiker stap voor stap door de info gaan, zonder overload.
+      </p>
+
+      <!-- HOME SCREEN -->
+      <figure class="mb-8">
+        <img
+          src="../images/app home.png"
+          alt="Homescreen van de trein-app."
+          class="w-full max-w-xs mx-auto rounded-card border border-stroke shadow"
+        />
+        <figcaption class="mt-2 text-sm text-muted text-center">
+          Homescreen — snelle toegang tot zoeken, recente reizen en tickets.
+        </figcaption>
+      </figure>
+
+      <!-- TREINRIT SCREEN -->
+      <figure class="mb-8">
+        <img
+          src="../images/app treinrit.png"
+          alt="Scherm met detail van de treinrit."
+          class="w-full max-w-xs mx-auto rounded-card border border-stroke shadow"
+        />
+        <figcaption class="mt-2 text-sm text-muted text-center">
+          Treinrit — overzicht met vertrektijd, spoor, overstappen en vertragingen.
+        </figcaption>
+      </figure>
+
+      <!-- TICKET SCREEN -->
+      <figure>
+        <img
+          src="../images/app ticket.png"
+          alt="Scherm met treinticket."
+          class="w-full max-w-xs mx-auto rounded-card border border-stroke shadow"
+        />
+        <figcaption class="mt-2 text-sm text-muted text-center">
+          Ticket — duidelijke QR-code, geldigheidsinfo en klasse in één oogopslag.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Reflectie / wat is beter -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Wat werkt hier beter?</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>De info is opgesplitst per stap, waardoor het minder overweldigend is.</li>
+        <li>Belangrijke info (tijd, spoor, ticket-QR) staat dicht bij de duimzone en is goed leesbaar.</li>
+        <li>De stijl sluit aan bij het vertrekbord, maar voelt toch echt als een app.</li>
+      </ul>
+    </section>
+
+    <!-- To do -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">To do voor week 5</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Microcopy verfijnen (teksten op knoppen en labels).</li>
+        <li>Flow testen: klopt de volgorde voor een echte gebruiker?</li>
+        <li>Kijken welke onderdelen nog te druk of onduidelijk aanvoelen.</li>
+      </ul>
+    </section>
+
+    <!-- Bottom pager -->
+    <nav class="flex items-center gap-[10px] flex-wrap mt-4">
+      <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week3.html">← Week 3</a>
+      <a class="font-bold text-accent px-2 py-1 rounded-[10px] hover:underline" href="week5.html">Week 5 →</a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-stroke text-muted mt-10 py-4">
+    <div class="max-w-layout mx-auto px-base text-xs sm:text-sm">
+      <small>Zöe Mejhoud — 1GDM2 • Project: Lost in Tra(i)nslation</small>
+    </div>
+  </footer>
+</body>
+</html>

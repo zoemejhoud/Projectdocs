@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 5 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#e9e6ee",
+            ink: "#172533",
+            muted: "#5c6a78",
+            card: "#ffffff",
+            stroke: "#e3e6ec",
+            accent: "#153a54",
+          },
+          borderRadius: { card: "16px" },
+          maxWidth: { layout: "1100px" },
+          fontFamily: {
+            sans: ["Open Sans","system-ui"],
+            display: ["Montserrat","system-ui"],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-bg text-ink font-sans leading-relaxed antialiased">
+
+  <!-- Header -->
+  <header class="border-b border-stroke bg-white/50 py-4">
+    <div class="max-w-layout mx-auto px-4">
+      <nav class="flex items-center gap-3 flex-wrap mb-3">
+        <a class="font-bold text-accent hover:underline" href="index.html">← Home</a>
+        <div class="flex-1"></div>
+        <a class="font-bold text-accent hover:underline" href="week4.html">← Week 4</a>
+        <a class="font-bold text-accent hover:underline" href="week6.html">Week 6 →</a>
+      </nav>
+
+      <h1 class="font-display font-extrabold text-accent text-[clamp(1.8rem,4.6vw,3rem)] mb-2">
+        Week 5 
+      </h1>
+
+      <p class="text-accent font-semibold text-[clamp(1.05rem,2.4vw,1.2rem)]">
+        Meer app-gevoel, betere leesbaarheid en een opvallende accentkleur.
+      </p>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-layout mx-auto px-4 mt-6 mb-10">
+
+    <!-- TEXT -->
+    <section class="bg-card border border-stroke rounded-card p-5 mb-5 shadow">
+      <h2 class="font-display font-bold text-accent text-xl mb-2">Feedback & wat ik ermee gedaan heb</h2>
+
+      <p class="mb-3">
+        Deze week heb ik vooral gewerkt op basis van de feedback die ik kreeg.
+        Ik moest meer letten op mijn lettergroottes en het geheel mocht nog meer richting
+        een échte app-stijl gaan: duidelijker, groter, leesbaarder en vooral
+        gebruiksvriendelijker.
+      </p>
+
+      <p class="mb-3">
+        Er werd ook gezegd dat er een opvallende kleur in mocht.
+        Daarom heb ik gekozen voor die fel groen-blauwe tint.
+        Die trekt aandacht, maar blijft toch passend in het ontwerp.
+      </p>
+
+      <p class="mb-3">
+        Mijn inspiratie komt vooral van de NMBS-app en websites die ik online bekeken heb.
+        Ik heb geprobeerd dezelfde logica te behouden: duidelijke structuur en
+        weinig afleiding.
+      </p>
+
+      <p>
+        De “Waar wil je heen?” pagina heb ik rustiger gemaakt, zodat het meteen duidelijk is
+        wat je als gebruiker moet doen. Geen overbodige drukte, gewoon duidelijk.
+      </p>
+    </section>
+
+    <!-- IMAGES -->
+    <section class="bg-card border border-stroke rounded-card p-5 shadow">
+
+      <h2 class="font-display font-bold text-accent text-xl mb-4">
+        Nieuwe app-screens
+      </h2>
+
+      <!-- 1 Aanmelden -->
+      <figure class="mb-6 text-center">
+        <img 
+        src="../images/aanmelden.png" 
+             alt="Aanmeldscherm app"
+             class="max-h-[520px] mx-auto rounded-card border border-stroke shadow">
+        <figcaption class="mt-2 text-sm text-muted">
+          1 — Aanmelden: simpel en duidelijk starten.
+        </figcaption>
+      </figure>
+
+      <!-- 2 Waar wil je heen -->
+      <figure class="mb-6 text-center">
+        <img src="../images/waar wil je heen.png"
+             alt="Zoekscherm bestemming"
+             class="max-h-[520px] mx-auto rounded-card border border-stroke shadow">
+        <figcaption class="mt-2 text-sm text-muted">
+          2 — Rustiger en duidelijker: meteen weten wat je moet doen.
+        </figcaption>
+      </figure>
+
+      <!-- 3 Treinrit aanpassing -->
+      <figure class="mb-6 text-center">
+        <img src="../images/treinrit aanpassing.png"
+             alt="Treinrit detailscherm"
+             class="max-h-[520px] mx-auto rounded-card border border-stroke shadow">
+        <figcaption class="mt-2 text-sm text-muted">
+          3 — Overzichtelijke rit-info en een opvallende accentkleur.
+        </figcaption>
+      </figure>
+
+      <!-- 4 Ticket -->
+      <figure class="text-center">
+        <img src="../images/ticket.png"
+             alt="Treinticket scherm"
+             class="max-h-[520px] mx-auto rounded-card border border-stroke shadow">
+        <figcaption class="mt-2 text-sm text-muted">
+          4 — Ticketweergave in dezelfde rustige stijl.
+        </figcaption>
+      </figure>
+
+    </section>
+
+    <!-- NAV -->
+    <nav class="flex items-center gap-3 flex-wrap mt-6">
+      <a class="font-bold text-accent hover:underline" href="week4.html">← Week 4</a>
+      <a class="font-bold text-accent hover:underline" href="week6.html">Week 6 →</a>
+    </nav>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-stroke text-muted mt-10 py-4">
+    <div class="max-w-layout mx-auto px-4 text-xs sm:text-sm">
+      <small>Zöe Mejhoud — 1GDM2 • Project: Lost in Tra(i)nslation</small>
+    </div>
+  </footer>
+
+</body>
+</html>
